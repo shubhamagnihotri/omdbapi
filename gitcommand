@@ -1,0 +1,9 @@
+Githun pages : https://shubhamagnihotri.github.io/omdbapi/
+===========================================================
+check this above link
+
+git init
+git add --all
+git commit -m "my first commit"
+git remote add origin https://github.com/shubhamagnihotri/omdbapi.git
+git push -u origin master

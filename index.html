@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+	  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+</head>
+<body>
+  
+<nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+  <a class="navbar-brand" href="#">Movie Platform</a>
+  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+    <span class="navbar-toggler-icon"></span>
+  </button>
+
+  <div class="collapse navbar-collapse" id="navbarSupportedContent">
+    <ul class="navbar-nav mr-auto">
+      <li class="nav-item active">
+        <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="#">Link</a>
+      </li>
+      <li class="nav-item dropdown">
+        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+          Dropdown
+        </a>
+        <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+          <a class="dropdown-item" href="#">Action</a>
+          <a class="dropdown-item" href="#">Another action</a>
+          <div class="dropdown-divider"></div>
+          <a class="dropdown-item" href="#">Something else here</a>
+        </div>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link disabled" href="#">Disabled</a>
+      </li>
+    </ul>
+  
+  </div>
+</nav>
+
+
+<main role="main" class="container mt-4">
+	<div class="alert flshmsg" style="display: none;"></div>
+      <div class="jumbotron">
+        <h5>Search Movile Detail By Follwing Inputs From IMDB</h5>
+        <div class="form-row">
+		    <div class="form-group col-sm-12 col-lg-3">
+		      <label for="inputEmail4">Title or Id</label>
+		      <input type="text" class="form-control aboutmovie" name="aboutmovie" id="aboutmovie" placeholder="Title or Id" value="batman">
+		    </div>
+		    <div class="form-group col-sm-12 col-lg-3" >
+		      <label for="inputPassword4">Selector</label>
+		      <select id="aboutmovieselector" name="aboutmovieselector" class="aboutmovieselector custom-select " required>
+       		  	<option value=''>Choose Selcotor(search by)</option>
+       		   	<option value="title">By Movie Title</option>
+       		   	<option value="id">By Movie ID</option>
+      		  </select>
+		    </div>
+		    <div class="form-group col-sm-12 col-lg-3">
+		      <label for="inputPassword4">Year</label>
+		      <input type="text" name='movieyear' class="form-control movieyear" id="movieyear" placeholder="Movie year">
+		    </div>
+		    <div class="form-group col-sm-12 col-lg-3">
+		     
+		      <input type="button" class="btn btn-primary mt-4 searchbutton" id="searchbutton" value="Search Details" style="margin-top: 32px !important;">
+		    </div>
+  		</div>
+  		<div class="alert alert-danger errorresponse" style="display: none;">
+  			
+  		</div>	
+
+  		<div class="row allmoviedetail" style="display: none;">
+  			<div class="col-sm-12 col-lg-6">
+  				<div class="card">
+				  <div class="card-header">
+				    Movies Detail
+				  </div>
+				  <div class="card-body">
+				    <h5 class="card-title">About Movie</h5>
+				    <p class="card-text moviedetail">With supporting text below as a natural lead-in</br> to additional content.</p>
+				    
+				  </div>
+				</div>
+  			</div>
+  			<div class="col-sm-12 col-lg-6">
+  			  <div class="card">
+			    <img class="card-img-top movieposterimage" src="https://www.sideshowtoy.com/wp-content/uploads/2018/03/dc-comics-batman-hush-superman-fabric-cape-edition-statue-prime1-studio-feature-903454-1.jpg" alt="Card image cap">
+			    <div class="card-body">
+			      <h5 class="card-title">Movie Poster</h5>
+			      <p class="card-text posterdetail">This is a longer card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+			     
+			    </div>
+			  </div>
+  			</div>
+  		</div>
+<!-- 
+        <p class="lead">This example is a quick exercise to illustrate how the top-aligned navbar works. As you scroll, this navbar remains in its original position and moves with the rest of the page.</p> -->
+        <!-- <a class="btn btn-lg btn-primary" href="../../components/navbar/" role="button">View navbar docs &raquo;</a> -->
+      </div>
+</main>
+
+
+
+<script
+			  src="https://code.jquery.com/jquery-3.3.1.min.js"
+			  integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
+			  crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
+<script type="text/javascript" src="js.js"></script>
+</body>
+</html>
